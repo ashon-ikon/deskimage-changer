@@ -20,8 +20,9 @@ class ImageSet(NamedTuple):
 
 def get_images() -> Tuple[ImageSet, str]:
     endpoint = (
-        "https://arc.msn.com/v3/Delivery/Cache?"
-        + "pid=209567&fmt=json&rafb=0&ua=WindowsShellClient%2F0&disphorzres=9999"
+        # Just becase we can concatenate the string :)
+        "https://arc" + ".msn" + ".com/v3/Delivery/Cache?"
+        + "pid=209567&fmt=json&rafb=0&ua=" + "WindowsShellClient%2F0&disphorzres=9999"
         + "&dispvertres=9999&lo=80217&pl=en-US&lc=en-US&ctry=us&time="
         + datetime.now().isoformat()
     )
