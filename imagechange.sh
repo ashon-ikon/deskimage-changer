@@ -23,17 +23,19 @@ function change_image {
 	echo "  Done"
 }
 
-
 function show_usage {
-	echo "Run script as "
-	echo "    ${SCRIPT_NAME} [-n|--new] "
-	echo ""
-	echo " -n | --new  : Attempt to pull new image while chaning the desktop image"
-	echo ""
-	echo "Check \`${CURRENT_DIR}' for copyright of each image."
-	echo ""
-	echo "      ... Have fun!"
+        echo "Run script as "
+        echo "    ${SCRIPT_NAME} [-n|--new] "
+        echo ""
+        echo " -n | --new  : Attempt to pull new image while chaning the desktop image"
+        echo ""
+        echo " -h | --help : To see this usage info"
+        echo ""
+        echo "Check \`${CURRENT_DIR}' for copyright of each image."
+        echo ""
+        echo "      ... Have fun!"
 }
+
 
 function parse_args {
 	while [ "$1" != "" ]; do
